@@ -1,0 +1,14 @@
+{
+  "name": "pi-thinking-summary",
+  "version": "0.1.0",
+  "description": "Collapsible tool calls and thinking summaries for Pi",
+  "keywords": ["pi-package"],
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
