@@ -1,6 +1,6 @@
-# Pi 工具树与思考摘要
+# pi-cc-style
 
-Pi CLI 的交互模式扩展，已在 Pi 1.6.0 验证。工具调用默认显示动作和结果摘要，思考结束后保留一条可展开的记录。
+为 Pi CLI 提供 Claude Code 风格的工具树与可折叠思考摘要，已在 Pi 1.6.0 验证。工具调用默认显示动作和结果摘要，思考结束后保留一条可展开的记录。
 
 ```text
 ◆ Read(server/package.json)
@@ -16,10 +16,12 @@ Pi CLI 的交互模式扩展，已在 Pi 1.6.0 验证。工具调用默认显示
 在 PowerShell 或其他终端运行以下命令，然后重新启动 Pi。
 
 ```powershell
-pi install git:github.com/githubxrw/pi-thinking-summary
+pi install git:github.com/githubxrw/pi-cc-style
 ```
 
-只在当前受信任项目安装时，给 `pi install` 加上 `--local`。临时试用可以运行 `pi -e git:github.com/githubxrw/pi-thinking-summary`，下载或克隆到本地后也可以在扩展目录运行 `pi -e ./index.ts`。
+只在当前受信任项目安装时，给 `pi install` 加上 `--local`。临时试用可以运行 `pi -e git:github.com/githubxrw/pi-cc-style`，下载或克隆到本地后也可以在扩展目录运行 `pi -e ./index.ts`。
+
+如果曾通过 `git:github.com/githubxrw/pi-thinking-summary` 安装，请先用 `pi remove` 移除旧来源，再用新地址安装。项目安装在移除与重新安装时都加上 `--local`。
 
 ## 使用
 
@@ -31,7 +33,7 @@ pi install git:github.com/githubxrw/pi-thinking-summary
 ## 卸载
 
 ```powershell
-pi remove git:github.com/githubxrw/pi-thinking-summary
+pi remove git:github.com/githubxrw/pi-cc-style
 ```
 
-项目安装使用 `pi remove --local git:github.com/githubxrw/pi-thinking-summary`。临时试用后，下次启动省略 `-e`。如需恢复原生思考正文，可在 Pi 中用 `Ctrl+T` 切换。
+项目安装使用 `pi remove --local git:github.com/githubxrw/pi-cc-style`。临时试用后，下次启动省略 `-e`。如需恢复原生思考正文，可在 Pi 中用 `Ctrl+T` 切换。
